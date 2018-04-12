@@ -1,9 +1,8 @@
 <?php
-/**
- * @package FABILU
- * @version V 1.0
- * @author  Steven LVI
- */
+/*
+*Dev.: Steven Santacruz Garcia
+*Date.: 12/04/18
+*/
 
 class listas_proveedoresHTML
 {
