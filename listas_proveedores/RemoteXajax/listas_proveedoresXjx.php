@@ -1,4 +1,8 @@
 <?php
+/*
+*Dev.: Steven Santacruz Garcia
+*Date.: 12/04/18
+*/
 function BuscarListaProveedores($form, $offset, $cod_lista)
 {
     //echo "Hola perros ====> ".$offset;

@@ -1,19 +1,9 @@
 <?php
-	/**
-  * @package IPSOFT-SIIS
-  * @version $Id: FormatoValoracionDiagrama.report.php,v 1.1.1.1 2012/05/08 16:36:54 hugo Exp $
-  * @copyright (C) 2005 IPSOFT - SA (www.ipsoft-sa.com)
-  * @author Hugo F  Manrique
-  */
-  /**
-  * Clase reporte: FormatoValoracionDiagrama_report
-  * Clase encargada de la creacion de un reporte en html
-  *
-  * @package IPSOFT-SIIS
-  * @version $Revision: 1.1.1.1 $
-  * @copyright (C) 2005 IPSOFT - SA (www.ipsoft-sa.com)
-  * @author Hugo F  Manrique
-  */
+/*
+*Dev.: Steven Santacruz Garcia
+*Date.: 12/04/18
+*/
+
 	class ListadoPacientes_report 
 	{ 
 		/**
