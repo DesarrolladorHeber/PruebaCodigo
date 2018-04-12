@@ -1,5 +1,8 @@
 <?php
-
+/*
+*Dev.: Steven Santacruz Garcia
+*Date.: 12/04/18
+*/
 class app_listas_proveedores_controller extends classModulo
 {
 
