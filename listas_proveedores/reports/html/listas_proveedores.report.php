@@ -77,31 +77,31 @@ class listas_proveedores_report
     public function CrearReporte()
     {
         IncludeClass("ConexionBD");
-        IncludeClass('CapacitacionSQL', 'classes', 'app', 'Capacitacion');
+        IncludeClass('listas_proveedoresSQL', 'classes', 'app', 'listas_proveedores');
 
-        $sql = new CapacitacionSQL();
+        // $sql = new listas_proveedoresSQL();
 
-        $pacientes = $sql->ObtenerPacientesII($this->datos);
+        // $pacientes = $sql->ObtenerPacientesII($this->datos);
 
-        $html .= "<table class=\"normal_10\" width=\"100%\" align=\"center\" border=\"1\" rules=\"all\">\n";
-        $html .= "  <tr class=\"label\" align=\"center\">";
-        $html .= "    <td>PACIENTE</td>";
-        $html .= "    <td>IDENTIFICACION</td>";
-        $html .= "    <td>FECHA</td>";
+        // $html .= "<table class=\"normal_10\" width=\"100%\" align=\"center\" border=\"1\" rules=\"all\">\n";
+        // $html .= "  <tr class=\"label\" align=\"center\">";
+        // $html .= "    <td>PACIENTE</td>";
+        // $html .= "    <td>IDENTIFICACION</td>";
+        // $html .= "    <td>FECHA</td>";
 
-        $html .= "  </tr>";
+        // $html .= "  </tr>";
 
-        foreach ($pacientes as $k => $d) {
+        // foreach ($pacientes as $k => $d) {
 
-            $html .= "  <tr >";
-            $html .= "    <td>" . $d['primer_nombre'] . " " . $d['segundo_nombre'] . " " . $d['primer_apellido'] . " " . $d['segundo_apellido'] . "</td>";
-            $html .= "    <td>" . $d['tipo_id_paciente'] . " " . $d['paciente_id'] . "</td>";
-            $html .= "    <td>" . $d['fecha_ingreso'] . "</td>";
+        //     $html .= "  <tr >";
+        //     $html .= "    <td>" . $d['primer_nombre'] . " " . $d['segundo_nombre'] . " " . $d['primer_apellido'] . " " . $d['segundo_apellido'] . "</td>";
+        //     $html .= "    <td>" . $d['tipo_id_paciente'] . " " . $d['paciente_id'] . "</td>";
+        //     $html .= "    <td>" . $d['fecha_ingreso'] . "</td>";
 
-            $html .= "  </tr>";
-        }
+        //     $html .= "  </tr>";
+        // }
 
-        $html .= "</table>";
+        // $html .= "</table>";
 
         return $html;
     }
