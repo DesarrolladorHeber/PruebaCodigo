@@ -1027,7 +1027,6 @@ class listas_proveedoresHTML
         $html .= ThemeCerrarTabla();
         return $html;
     }
-
     public function FormaMensajeModulo($action, $mensaje)
     {
         $html = ThemeAbrirTabla('MENSAJE');
