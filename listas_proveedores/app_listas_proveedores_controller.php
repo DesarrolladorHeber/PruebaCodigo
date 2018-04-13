@@ -5,10 +5,8 @@
 */
 class app_listas_proveedores_controller extends classModulo
 {
-
     public function main()
     {
-
         $request  = $_REQUEST;
         $usuario  = UserGetUID();
         $permisos = ModuloGetPermisos($request['contenedor'], $request['modulo'], $usuario);
