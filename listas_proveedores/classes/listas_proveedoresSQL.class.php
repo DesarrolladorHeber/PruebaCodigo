@@ -1,19 +1,16 @@
 <?php
 /*
-*Dev.: Steven Santacruz Garcia
-*Date.: 12/04/18
-*/
+ *Dev.: Steven Santacruz Garcia
+ *Date.: 12/04/18
+ */
 
 class listas_proveedoresSQL extends ConexionBD
 {
-
     public function ObtenerListasProveedores($permisos, $form)
     {
-
         // echo "<pre>";
         // print_r($form);
         // echo "</pre>";
-
         $sql = " SELECT terpro.cod_lista,
                         terpro.tercero_id,
                         terpro.tipo_id_tercero,
@@ -685,7 +682,7 @@ class listas_proveedoresSQL extends ConexionBD
                     if (empty($productos[$tmp[0]])) {
 
                         $productos[$tmp[0]] = '1';
-                        if(count($tmp) != 4){
+                        if (count($tmp) != 4) {
                             $datosIncompletos[$tmp[0]] = $tmp[0];
                         } else if (empty($costos[trim($tmp[0])])) {
                             $noInventario[$tmp[0]] = $tmp[0];
@@ -693,7 +690,7 @@ class listas_proveedoresSQL extends ConexionBD
                             $enlista[$tmp[0]] = $tmp[0];
                         } else if (!ctype_digit($tmp[1]) || !ctype_digit($tmp[2]) || !ctype_digit($tmp[3])) {
                             $noValidos[$tmp[0]] = $tmp[0];
-                        }else {
+                        } else {
 
                             $codigo_producto = trim($tmp[0]);
                             $precio_bruto    = intval($tmp[1]);

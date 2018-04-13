@@ -1,8 +1,8 @@
 <?php
 /*
-*Dev.: Steven Santacruz Garcia
-*Date.: 12/04/18
-*/
+ *Dev.: Steven Santacruz Garcia
+ *Date.: 12/04/18
+ */
 
 class listas_proveedoresHTML
 {
@@ -622,8 +622,8 @@ class listas_proveedoresHTML
             $html .= "              </tr>\n";
             $html .= "              <tr class=\"modulo_list_claro\">\n";
             $html .= "                  <td colspan=\"3\">\n";
-            $html .= "                  NOTA: EL FORMATO DEBE ESTAR EN CSV Y DEBE TENER LA SIGUIENTE 
-                                        ESTRUCTURA(SEPARADO POR PUNTO Y COMA): CÓDIGO PRODUCTO, PRECIO SIN IVA, 
+            $html .= "                  NOTA: EL FORMATO DEBE ESTAR EN CSV Y DEBE TENER LA SIGUIENTE
+                                        ESTRUCTURA(SEPARADO POR PUNTO Y COMA): CÓDIGO PRODUCTO, PRECIO SIN IVA,
                                         IVA Y UNIDAD DE EMPAQUE, EL ARCHIVO NO DEBE TENER CABECERA.\n";
             $html .= "                  </td>\n";
             $html .= "              </tr>\n";
@@ -929,7 +929,6 @@ class listas_proveedoresHTML
             $html .= "<br>\n";
         }
 
-
         if (!empty($noValidos)) {
             $contador = 1;
             $html .= "<table align=\"center\" width=\"50%\">\n";
@@ -1029,29 +1028,29 @@ class listas_proveedoresHTML
         return $html;
     }
 
-            function FormaMensajeModulo($action,$mensaje)
-        {
-            $html  = ThemeAbrirTabla('MENSAJE');
-            $html .= "<table border=\"0\" width=\"50%\" align=\"center\" >\n";
-            $html .= "  <tr>\n";
-            $html .= "      <td>\n";
-            $html .= "        <table width=\"100%\" class=\"modulo_table_list\">\n";
-            $html .= "          <tr class=\"normal_10AN\">\n";
-            $html .= "            <td align=\"center\">\n".$mensaje."</td>\n";
-            $html .= "          </tr>\n";
-            $html .= "        </table>\n";
-            $html .= "      </td>\n";
-            $html .= "  </tr>\n";
-            $html .= "  <tr>\n";
-            $html .= "      <td align=\"center\"><br>\n";
-            $html .= "          <form name=\"form\" action=\"".$action['volver']."\" method=\"post\">";
-            $html .= "              <input class=\"input-submit\" type=\"submit\" name=\"aceptar\" value=\"Aceptar\">";
-            $html .= "          </form>";
-            $html .= "      </td>";
-            $html .= "  </tr>";
-            $html .= "</table>";
-            $html .= ThemeCerrarTabla();            
-            return $html;
-        }
+    public function FormaMensajeModulo($action, $mensaje)
+    {
+        $html = ThemeAbrirTabla('MENSAJE');
+        $html .= "<table border=\"0\" width=\"50%\" align=\"center\" >\n";
+        $html .= "  <tr>\n";
+        $html .= "      <td>\n";
+        $html .= "        <table width=\"100%\" class=\"modulo_table_list\">\n";
+        $html .= "          <tr class=\"normal_10AN\">\n";
+        $html .= "            <td align=\"center\">\n" . $mensaje . "</td>\n";
+        $html .= "          </tr>\n";
+        $html .= "        </table>\n";
+        $html .= "      </td>\n";
+        $html .= "  </tr>\n";
+        $html .= "  <tr>\n";
+        $html .= "      <td align=\"center\"><br>\n";
+        $html .= "          <form name=\"form\" action=\"" . $action['volver'] . "\" method=\"post\">";
+        $html .= "              <input class=\"input-submit\" type=\"submit\" name=\"aceptar\" value=\"Aceptar\">";
+        $html .= "          </form>";
+        $html .= "      </td>";
+        $html .= "  </tr>";
+        $html .= "</table>";
+        $html .= ThemeCerrarTabla();
+        return $html;
+    }
 
 }
