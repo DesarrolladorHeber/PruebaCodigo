@@ -5,8 +5,6 @@
  */
 function BuscarListaProveedores($form, $offset, $cod_lista)
 {
-    //echo "Hola perros ====> ".$offset;
-
     $objResponse = new xajaxResponse();
 
     $sql = AutoCarga::factory("listas_proveedoresSQL", "classes", "app", "listas_proveedores");
@@ -30,8 +28,6 @@ function BuscarListaProveedores($form, $offset, $cod_lista)
 
 function BuscarPreciosListaProveedores($form, $offset, $cod_lista)
 {
-    //echo "Hola perros ====> ".$offset;
-
     $objResponse = new xajaxResponse();
 
     $sql = AutoCarga::factory("listas_proveedoresSQL", "classes", "app", "listas_proveedores");
@@ -173,11 +169,6 @@ function ModificarProducto($cod_lista, $codigo_producto)
     $mdl         = AutoCarga::factory("listas_proveedoresSQL", "classes", "app", "listas_proveedores");
 
     $producto = $mdl->ObtenerInformacionProductosListasDePrecios($cod_lista, $codigo_producto);
-
-    // echo "<pre>";
-    // echo "lista ====> ".$cod_lista;
-    // print_r($producto);
-    // echo "</pre>";
 
     $fncjsMOD = "EvaluarValor(  'inp_precio_" . $producto['codigo_producto'] . "',
                                 'inp_iva_" . $producto['codigo_producto'] . "',
