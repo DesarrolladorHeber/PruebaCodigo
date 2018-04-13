@@ -1,8 +1,8 @@
 <?php
 /*
-*Dev.: Steven Santacruz Garcia
-*Date.: 12/04/18
-*/
+ *Dev.: Steven Santacruz Garcia
+ *Date.: 12/04/18
+ */
 function BuscarListaProveedores($form, $offset, $cod_lista)
 {
     //echo "Hola perros ====> ".$offset;
@@ -96,7 +96,7 @@ function GuardarListaProveedor($form, $cod_lista, $pagina)
         if ($rst) {
             $objResponse->alert("SE AGREGO CORRECTAMENTE LOS PRODUCTOS.");
             $objResponse->script("BuscarProductoLista('" . $pagina . "');");
-           
+
             $listaProveedores = $mdl->ObtenerPreciosListaProveedores($form, $offset, $cod_lista);
 
             $html = $view->BuscarPreciosListaProveedoresView($action, $listaProveedores, $request, $mdl->conteo, $mdl->pagina, $permisos);

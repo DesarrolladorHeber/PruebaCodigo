@@ -1,14 +1,12 @@
 <?php
 /*
-*Dev.: Steven Santacruz Garcia
-*Date.: 12/04/18
-*/
+ *Dev.: Steven Santacruz Garcia
+ *Date.: 12/04/18
+ */
 class app_listas_proveedores_controller extends classModulo
 {
-
     public function main()
     {
-
         $request  = $_REQUEST;
         $usuario  = UserGetUID();
         $permisos = ModuloGetPermisos($request['contenedor'], $request['modulo'], $usuario);
