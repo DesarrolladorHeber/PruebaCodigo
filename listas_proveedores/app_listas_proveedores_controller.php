@@ -44,10 +44,6 @@ class app_listas_proveedores_controller extends classModulo
 
         $request = $_REQUEST;
 
-        // echo "<pre>";
-        // print_r($request);
-        // echo "</pre>";
-
         if (isset($request['Permisos'])) {
             SessionSetVar("Permisoslistas_proveedores", $request['Permisos']);
         }
@@ -80,10 +76,6 @@ class app_listas_proveedores_controller extends classModulo
             null, "ISO-8859-1");
 
         $request = $_REQUEST;
-
-        // echo "<pre>";
-        // print_r($request);
-        // echo "</pre>";
 
         if (isset($request['Permisos'])) {
             SessionSetVar("Permisoslistas_proveedores", $request['Permisos']);
@@ -121,10 +113,6 @@ class app_listas_proveedores_controller extends classModulo
             null, "ISO-8859-1");
 
         $request = $_REQUEST;
-
-        // echo "<pre>";
-        // print_r($request);
-        // echo "</pre>";
 
         if (isset($request['Permisos'])) {
             SessionSetVar("Permisoslistas_proveedores", $request['Permisos']);
