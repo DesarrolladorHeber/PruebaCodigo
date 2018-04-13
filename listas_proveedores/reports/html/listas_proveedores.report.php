@@ -4,7 +4,7 @@
  *Date.: 12/04/18
  */
 
-class ListadoPacientes_report
+class listas_proveedores_report
 {
     /**
      * @var $datos
@@ -46,7 +46,7 @@ class ListadoPacientes_report
      *
      * @return boolean
      */
-    public function ListadoPacientes_report($datos = array())
+    public function listas_proveedores_report($datos = array())
     {
         $this->datos = $datos;
         return true;
