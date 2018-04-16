@@ -3,7 +3,7 @@
  *Dev.: Steven Santacruz Garcia
  *Date.: 12/04/18
  */
-
+//ssss
 class listas_proveedoresSQL extends ConexionBD
 {
     public function ObtenerListasProveedores($permisos, $form)
